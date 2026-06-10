@@ -1,5 +1,7 @@
 import requests
 import sys
+import colorama
+colorama.init()
 # color define
 G = '\033[92m'#Green
 R = '\033[91m'#Red
