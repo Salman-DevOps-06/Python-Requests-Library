@@ -2,7 +2,6 @@ import requests
 import sys
 import colorama
 colorama.init()
-sys.stdout.reconfigure(encoding='utf-8')
 # color define
 G = '\033[92m'#Green
 R = '\033[91m'#Red
@@ -36,9 +35,9 @@ def analyze_headers():
         print("Headers: ")
         for i in security_header:
             if header.get(i) is None:
-                print(R + f"⚠ Missing Header: {i}" + r)
+                print(R + f"[!] Missing Header: {i}" + r)
             else:
-                print(G + f"✔ Header: {i}" + r)
+                print(G + f"[+] Header: {i}" + r)
     except requests.exceptions.Timeout:
         print(R + "[!] Error: The server took too long to respond!" + r); sys.exit()
     except requests.exceptions.ConnectionError:
@@ -94,4 +93,4 @@ elif option == "3":
     source_downloader()
 else:
     print(R + "##################################\n#         Invalid Option         #\n##################################" + r); sys.exit()
-input("\nPress any key to Exit")
+input("\nPress any key to Exit.....")
