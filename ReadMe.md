@@ -7,3 +7,7 @@
 3. Download the any file (pdf, image, etc) which has no authentication required<br>
 <br>
 <h5>Required Python Library: Requests</h5>
+<br>
+<p>
+For download go to releases 👉 <br>
+</p>
