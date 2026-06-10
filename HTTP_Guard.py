@@ -2,6 +2,7 @@ import requests
 import sys
 import colorama
 colorama.init()
+sys.stdout.reconfigure(encoding='utf-8')
 # color define
 G = '\033[92m'#Green
 R = '\033[91m'#Red
@@ -93,3 +94,4 @@ elif option == "3":
     source_downloader()
 else:
     print(R + "##################################\n#         Invalid Option         #\n##################################" + r); sys.exit()
+input("\nPress any key to Exit")
